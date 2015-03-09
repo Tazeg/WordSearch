@@ -12,23 +12,25 @@ PHP
 
 ### Installation
 
-Put files on your web server, then load the `index.php` page. 
+Extract files on your web server or your computer.
 
 ### Usage
 
-To generate a grid in command line, write this for example in `index.php` :
+In your browser, load the `index.php` page.  
+To generate a grid in command line, type `php index.php` :
 
 ```bash
 require_once 'class.grid.php';
 require_once 'class.word.php';
-$grid=new Grid(5);
-$grid->gen();
-echo $grid->render(Grid::RENDER_TEXT); // use $grid->render() for HTML output
+
+$grid=new Grid(5); // grid size, from 3 to 20
+$grid->gen(); // generate the puzzle
+echo $grid->render(Grid::RENDER_TEXT); // display it. Use $grid->render() for HTML output
 echo "Words to find (".$grid->getNbWords().") :\n";
 echo $grid->getWordsList("\n"); // argument is word separator
 ```
 
-Then type the command `php index.php`, it will display :
+For example, the result in command line is :
 
 ```bash
 I R E A C 
