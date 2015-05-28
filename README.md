@@ -4,7 +4,7 @@ A "word search" puzzle generator in PHP.
 
 ### Screenshot
 
-<img src="http://fr.jeffprod.com/blog/images/2015-02-23-motsmeles.png">
+<img src="http://fr.jeffprod.com/blog/img/2015-02-23-motsmeles.png">
 
 ### Required
 
